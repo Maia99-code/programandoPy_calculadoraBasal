@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Hidratación Pediátrica</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="formulario">
+            <h1>hidratación basal</h1>
+            <form class="cajaForm" onsubmit="return false;">
+              <label for="peso">Peso del paciente (kg):</label>
+              <input type="number" id="peso" class="cajaDeNumeros" placeholder="Ingrese el peso en kg">
+              <button type="button" class="botonCalcular" onclick="calcularHidratacion()">Calcular</button>
+              
+          </form>
+          
+        </div>
+
+        <div class="informacion">
+            <h2 id="resultadoH2">Su resultado estara aqui</h2>
+            <div id="resultado"></div>
+            <svg id="icono" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24">
+              <path fill="currentColor" 
+              d="M7 22v-5H2V7h5V2h10v5h5v10h-5v5H7ZM4 11h5q.25 0 .475.125t.35.325l.875 1.3l1.35-4.05q.1-.3.362-.5T13 8q.25 0 .475.125t.35.325l1.7 2.55H20V9h-5V4H9v5H4v2Zm5 9h6v-5h5v-2h-5q-.25 0-.475-.125t-.375-.325l-.85-1.3l-1.35 4.05q-.1.3-.375.5t-.6.2q-.25 0-.475-.125t-.35-.325L8.45 13H4v2h5v5Zm3-8Z"/>
+            </svg>
+        </div>
+    </div>
+</body>
+</html>
